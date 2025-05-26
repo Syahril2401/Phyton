@@ -152,7 +152,7 @@ stars = [TwinkleStar(random.uniform(-12, 12), random.uniform(4, 14)) for _ in ra
 
 def animate(frame):
     # Gandakan frame untuk menggandakan kecepatan animasi
-    fast_frame = frame * 2
+    fast_frame = frame * 10
 
     ax.clear()
     ax.set_xlim(-12, 12)
