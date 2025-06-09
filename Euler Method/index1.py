@@ -29,3 +29,4 @@ plt.ylabel('f(t)')
 plt.grid()
 plt.legend(loc='lower right')
 plt.show()
+

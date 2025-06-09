@@ -7,7 +7,6 @@ suhu_data = np.array([10, 15, 20, 25, 30])
 polutan_data = np.array([2.5, 2.1, 1.8, 1.3, 1.1])
 
 # Fungsi Interpolasi linear
-# 'kind='linear'' secara default sudah linear, tapi ditulis untuk kejelasan.
 f_interp = interp1d(suhu_data, polutan_data, kind='linear')
 
 # Estimasi kadar polutan
@@ -44,7 +43,7 @@ plt.xlabel('Suhu (°C)')
 plt.ylabel('Kadar Polutan (mg/L)')
 plt.grid(True, linestyle='--', alpha=0.7)
 plt.legend()
-plt.xticks(np.arange(min(suhu_data), max(suhu_data) + 1, 5)) # Set ticks x setiap 5
-plt.ylim(0.5, 3.0) # Batasi rentang y untuk tampilan yang lebih baik
-plt.tight_layout() # Menyesuaikan tata letak agar tidak terpotong
+plt.xticks(np.arange(min(suhu_data), max(suhu_data) + 1, 5)) 
+plt.ylim(0.5, 3.0) 
+plt.tight_layout() 
 plt.show()
